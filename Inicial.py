@@ -2,12 +2,15 @@ import sys
 sys.path.append(".")
 
 from write_read import writeRead
+from screen import screen
 
 cont = 1
 nomes = []
 notas = []
 wr = writeRead
+scr = screen
 
+scr.cabecalho(scr)
 wour = int(input("Deseja Ler ou Escrever o arquivo? (1->Ler/2->Escrever): "))
 
 if(wour == 1):
