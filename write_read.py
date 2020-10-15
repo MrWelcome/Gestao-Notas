@@ -22,24 +22,29 @@ class writeRead:
     def getNomes(self):
         txt = self.__read(writeRead)
         txts = txt.split(',')
-        n = []
+        nome = {}
+        n = 0
 
         for i in range(len(txts)):
             if(i%2 == 0):
                 if(txts[i] != ""):
-                    n.append(txts[i])
-        return n
+                    nome[n] = txts[i]
+                    n += 1
+        return nome
 
     def getNotas(self):
         txt = self.__read(writeRead)
         txts = txt.split(',')
-        n = []
+
+        nota = {}
+        n = 0
 
         for i in range(len(txts)):
             if(i%2 != 0):
                 if(txts[i] != ""):
-                    n.append(txts[i])
-        return n
+                    nota[n] = txts[i]
+                    n += 1
+        return nota
 
     def __read(self):
         f = open("databasetxt.txt", "r")

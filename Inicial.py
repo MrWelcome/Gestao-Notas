@@ -7,6 +7,7 @@ from screen import screen
 cont = 1
 nomes = []
 notas = []
+
 wr = writeRead
 scr = screen
 
