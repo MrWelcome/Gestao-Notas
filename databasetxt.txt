@@ -2,5 +2,5 @@ Wellington,10
 Fellipe,20
 Vitor,300
 Marco,1
-Vinicius,-1
+Vinicius,0
 Anderson,7
