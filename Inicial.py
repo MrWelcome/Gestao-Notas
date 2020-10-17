@@ -15,10 +15,7 @@ scr.cabecalho(scr)
 wour = int(input("Deseja Ler ou Escrever o arquivo? (1->Ler/2->Escrever): "))
 
 if(wour == 1):
-    n = wr.getNomes(wr)
-    no = wr.getNotas(wr)
-    print(n)
-    print(no)
+    print(wr.getNomeNota(wr))
 else:
     while(cont == 1):
         nomes.append(input("Nome do aluno: "))

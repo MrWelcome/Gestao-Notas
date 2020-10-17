@@ -19,33 +19,23 @@ class writeRead:
 
         return txt
 
-    def getNomes(self):
-        txt = self.__read(writeRead)
-        txts = txt.split(',')
-        nome = {}
-        n = 0
 
-        for i in range(len(txts)):
-            if(i%2 == 0):
-                if(txts[i] != ""):
-                    nome[n] = txts[i]
-                    n += 1
-        return nome
+    def getNomeNota(self):
+        lines = self.__read(writeRead)
+        nomes = []
+        notas = []
+        lista = {}
 
-    def getNotas(self):
-        txt = self.__read(writeRead)
-        txts = txt.split(',')
+        for line in lines:
+            tspl = line.split(',')
+            nomes.append(tspl[0])
+            notas.append(tspl[1])
 
-        nota = {}
-        n = 0
+        for i in range(len(nomes)):
+            lista[nomes[i]] = notas[i]
 
-        for i in range(len(txts)):
-            if(i%2 != 0):
-                if(txts[i] != ""):
-                    nota[n] = txts[i]
-                    n += 1
-        return nota
+        return lista
 
     def __read(self):
         f = open("databasetxt.txt", "r")
-        return f.read()
+        return f.read().splitlines()
