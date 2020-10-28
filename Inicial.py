@@ -13,7 +13,7 @@ wr = writeRead
 scr = screen
 reord = ordenacao
 
-scr.cabecalho(scr)
+scr.cabecalho(scr, len(reord.ordenar(reord, wr.getNomeNota(wr))))
 wour = int(input("Deseja Ler ou Escrever o arquivo? (1->Ler/2->Escrever): "))
 
 if(wour == 1):

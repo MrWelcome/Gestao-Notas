@@ -32,7 +32,7 @@ class writeRead:
             notas.append(tspl[1])
 
         for i in range(len(nomes)):
-            lista[nomes[i]] = notas[i]
+            lista[i] = {nomes[i],notas[i]}
 
         return lista
 
