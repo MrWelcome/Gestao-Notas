@@ -24,7 +24,7 @@ class ordenacao:
 
 
 
-
+    #Versão com SELF que não consegui fazer funcionar
     # def ordenar(self, list_a, coluna, a = 1): #list_a = DICIONARIO, Coluna = Quais dados o usuario quer ordenar, a = 1 Ordem crescente / A-Z
     #      #Tem que receber um dicionario dessa maneira: dicionario = {0:["NOME", NOTA], 1:["NOME", NOTA], 2: ["NOME", NOTA]}
     #     len_lista = len(list_a, ) - 1
