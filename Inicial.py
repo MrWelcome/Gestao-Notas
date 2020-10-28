@@ -3,7 +3,7 @@ sys.path.append(".")
 
 from write_read import writeRead
 from screen import screen
-from ordenacao import ordenacao
+from ordenacao import ordenar
 
 cont = 1
 nomes = []
@@ -11,13 +11,13 @@ notas = []
 
 wr = writeRead
 scr = screen
-reord = ordenacao
+reord = ordenar
 
 scr.cabecalho(scr, len(reord.ordenar(reord, wr.getNomeNota(wr))))
 wour = int(input("Deseja Ler ou Escrever o arquivo? (1->Ler/2->Escrever): "))
 
 if(wour == 1):
-    print(reord.reordNotas(reord, wr.getNomeNota(wr)))
+    print(reord.ordenar(wr.getNomeNota(wr), 1))
 else:
     while(cont == 1):
         nomes.append(input("Nome do aluno: "))
