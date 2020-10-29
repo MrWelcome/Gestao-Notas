@@ -1,7 +1,7 @@
 class ordenacao:
-    def ordenar(list_a, coluna, a = 1): #list_a = DICIONARIO, Coluna = Quais dados o usuario quer ordenar, a = 1 Ordem crescente / A-Z
+    def ordenar(self, list_a, coluna = 0, a = 1): #list_a = DICIONARIO, Coluna = Quais dados o usuario quer ordenar, a = 1 Ordem crescente / A-Z
          #Tem que receber um dicionario dessa maneira: dicionario = {0:["NOME", NOTA], 1:["NOME", NOTA], 2: ["NOME", NOTA]}
-        len_lista = len(list_a, ) - 1
+        len_lista = len(list_a) - 1
         sorted = False
         while not sorted:
             sorted = True
