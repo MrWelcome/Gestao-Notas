@@ -4,3 +4,10 @@ Marco,1
 Vinicius,0
 Anderson,7
 Wellington,10
+Jorge,10
+Luan,6
+Joao,5
+Marlos,6.5
+Carlos,2
+Kaline,3.4
+Jose Antonio,2.3

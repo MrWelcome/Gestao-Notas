@@ -1,6 +1,7 @@
 import os.path
 
 class writeRead:
+
     def write(self, nomes, notas):
         if(os.path.isfile('databasetxt.txt')):
             f = open("databasetxt.txt", "a")
@@ -15,7 +16,7 @@ class writeRead:
     def __formatar(self, nomes, notas):
         txt = ""
         for i in range(len(nomes)):
-            txt += nomes[i] + "," + notas[i] + ","
+            txt += '\n' + nomes[i] + "," + notas[i]
 
         return txt
 
@@ -33,7 +34,7 @@ class writeRead:
 
         for i in range(len(nomes)):
 
-            lista[i] = [nomes[i], int(notas[i])]
+            lista[i] = [nomes[i], float(notas[i])]
 
         return lista
 
