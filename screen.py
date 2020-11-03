@@ -3,13 +3,21 @@ class screen:
         print("#"*60)
         print("#"*21,"Gestor de nostas","#"*21)
         print("#"*60)
-        for i in range(1, len_lista):
-            tamanhoNome = len(nome[i])
-            tamanhoNota = len(nota[i])
-            tamanhoTotal = tamanhoNome + tamanhoNota#pega do tamanho das strings na tabela
-            self = self[i].replace(",","|")#substituir as virgulas por barra
-            self = self[i].insert(0,"|")#adciona uma barra no inicio da linha
 
-        print("_"*tamanhoTotal) 
+    def corpo(self):
+            print("_"*25) 
+            self.insert(0, "|")
+            new_strings = []
+            def tabela(self):
+                for string in self:
+                    new_string = string.replace(",", "|")
+                    new_strings.append(new_string)
+
+            tabela(self)
+            print(new_strings)
+
+        print("_"*25)
+    def rodape(len_lista):
+        print("Nessa fsale tem", len_lista, "Alunos") 
         print("#"*14,"NÃO HÁ OUTRAS NOTAS REGISTRADAS","#"*14)
 
