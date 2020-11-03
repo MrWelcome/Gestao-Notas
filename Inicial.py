@@ -13,13 +13,13 @@ wr = writeRead
 scr = screen
 reord = ordenacao
 
-#scr.cabecalho(scr, len(reord.ordenar(reord, wr.getNomeNota(wr))))
+scr.cabecalho(scr)
 lerEscr = int(input("Deseja Ler ou Escrever o arquivo? (1->Ler/2->Escrever): "))
 
 def ler():
     notaNome = int(input("Deseja Ordernar por Nome(0) ou Nota(1): "))
     cresDecr = int(input("Deseja Ordenar por ordem Crescente(1) ou Decrescente(2): "))
-
+    scr.corpo(scr, wr.getNomeNota(wr))
     print(reord.ordenar(reord, wr.getNomeNota(wr), notaNome, cresDecr))
 
 if(lerEscr == 1):
