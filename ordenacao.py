@@ -6,15 +6,14 @@ class ordenacao:
         while not sorted:
             sorted = True
             for i in range(0, len_lista):
-
                 if az == 1:
                     if list_a.get(i)[coluna] > list_a.get(i+1)[coluna]:
                         sorted = False
                         list_a[i], list_a[i+1] = list_a[i+1], list_a[i]
-                    elif az != 1:
-                        if list_a.get(i)[coluna] < list_a.get(i+1)[coluna]:
-                            sorted = False
-                            list_a[i], list_a[i+1] = list_a[i+1], list_a[i]
+                elif az != 1:
+                    if list_a.get(i)[coluna] < list_a.get(i+1)[coluna]:
+                        sorted = False
+                        list_a[i], list_a[i+1] = list_a[i+1], list_a[i]
         return list_a
 
 
