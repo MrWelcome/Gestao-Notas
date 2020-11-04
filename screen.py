@@ -3,7 +3,7 @@ class screen:
         print("#"*60)
         print("#"*21,"Gestor de nostas","#"*21)
         print("#"*60)
-
+        print("|NOME                   |NOTA       |")
     def corpo(self, nomeNota):
         print("_" * 25)
         new_strings = []
@@ -18,6 +18,5 @@ class screen:
 
 
     def rodape(len_lista):
-        print("Nessa fsale tem", len_lista, "Alunos") 
+        print(f"Nessa sala tem {len_lista}Alunos") 
         print("#"*14,"NÃO HÁ OUTRAS NOTAS REGISTRADAS","#"*14)
-
