@@ -3,9 +3,10 @@ class screen:
         print("#"*60)
         print("#"*21,"Gestor de nostas","#"*21)
         print("#"*60)
-        print("|NOME                   |NOTA       |")
+
     def corpo(self, nomeNota):
         print("_" * 25)
+        print("|NOME                   |NOTA       |")
         new_strings = []
 
         for string in nomeNota:
