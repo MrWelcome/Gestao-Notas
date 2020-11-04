@@ -1,3 +1,4 @@
+import json
 class ordenacao:
     def ordenar(self, list_a, coluna, az): #list_a = DICIONARIO, Coluna = Quais dados o usuario quer ordenar, a = 1 Ordem crescente / A-Z
          #Tem que receber um dicionario dessa maneira: dicionario = {0:["NOME", NOTA], 1:["NOME", NOTA], 2: ["NOME", NOTA]}
@@ -16,6 +17,7 @@ class ordenacao:
                             sorted = False
                             list_a[i], list_a[i+1] = list_a[i+1], list_a[i]
         return list_a
+        json.dumps(list_a, indent=4)
 
 
 

@@ -15,4 +15,4 @@ matheus,10
 lucas,8
 joao,9
 Lucas,10
-João,8
+Joao,8
