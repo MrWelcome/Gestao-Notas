@@ -1,6 +1,5 @@
 import os.path
 
-
 class writeRead:
 
     def write(self, nomes, notas):
@@ -18,7 +17,7 @@ class writeRead:
         txt = ""
         for i in range(len(nomes)):
             txt += '\n' + nomes[i] + "," + notas[i]
-            
+
         return txt
 
 

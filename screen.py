@@ -6,18 +6,20 @@ class screen:
 
     def corpo(nomeNota):
         print("_" * 25)
-        print("|NOME                   |NOTA       |")
-        new_strings = []
-
-        for string in nomeNota:
-            string.insert(0, "|")
-            string.insert(-1, "\n")
-            new_string = string.replace(",", "|")
-            new_strings.append(new_string)
-
-        print(new_strings)
+        print("#" * 4,"NOTAS DOS ALUNOS","#"* 3)
         print("_" * 25)
+        print("|NOME       |NOTA       |")
+        print("-" * 25)
 
+
+        for i in range(0, len(nomeNota)):
+
+            nomeNota[i]= (f"{i+1}: {nomeNota[i]}")
+            nova = nomeNota[i].replace(",","|")
+            nova = nova.replace("[","")
+            nova = nova.replace("]","")
+            nova = nova.replace("'","")
+            print(nova)
 
     def rodape(len_lista):
         len_lista = len(len_lista)

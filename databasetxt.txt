@@ -11,8 +11,3 @@ Marlos,6.5
 Carlos,2
 Kaline,3.4
 Jose Antonio,2.3
-matheus,10
-lucas,8
-joao,9
-Lucas,10
-Joao,8

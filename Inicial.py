@@ -20,9 +20,8 @@ def ler():
     notaNome = int(input("Deseja Ordernar por Nome(0) ou Nota(1): "))
     cresDecr = int(input("Deseja Ordenar por ordem Crescente(1) ou Decrescente(2): "))
 
-    print(reord.ordenar(reord, wr.getNomeNota(wr), notaNome, cresDecr))
- #   scr.corpo(reordena)
-
+    reordena = (reord.ordenar(reord, wr.getNomeNota(wr), notaNome, cresDecr))
+    print(scr.corpo(reordena))
 if(lerEscr == 1):
    ler()
 else:
@@ -36,6 +35,5 @@ else:
 
         if(act == 1):
             ler()
-
-
 scr.rodape(wr.getNomeNota(wr))
+
