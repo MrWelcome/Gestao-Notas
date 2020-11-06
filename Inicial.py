@@ -21,6 +21,7 @@ def ler():
     cresDecr = int(input("Deseja Ordenar por ordem Crescente(1) ou Decrescente(2): "))
 
     reordena = (reord.ordenar(reord, wr.getNomeNota(wr), notaNome, cresDecr))
+    wr.writeOrd(wr, reordena)
     print(scr.corpo(reordena))
 if(lerEscr == 1):
    ler()

@@ -1,0 +1,15 @@
+AAAAAAAAAA,1.0
+Anderson,7.0
+Carlos,2.0
+Fellipe,20.0
+Joao,5.0
+Jorge,10.0
+Jose Antonio,2.3
+Kaline,3.4
+Luan,6.0
+Marco,1.0
+Marco,12.0
+Marlos,6.5
+Vinicius,0.0
+Vitor,300.0
+Wellington,10.0
